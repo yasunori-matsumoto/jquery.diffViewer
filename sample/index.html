@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Diff Viewer</title>
+    <style>
+      ul, li {
+        list-style-type: none;
+      }
+    
+      .diff_list {
+        margin-top: 50px;
+        margin-left: 50px;
+        position: relative;
+      }
+      
+      .diff_list li {
+        position: relative;
+        width: 640px;
+        height: 320px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="diff_list">
+      <li>
+        <div class="before"><img src="a.png" alt="a"></div>
+        <div class="after"><img src="b.png" alt="a"></div>
+      </li>
+    </ul>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./jquery.diffviewer.js"></script>
+    <script>
+      $(function() {
+        $('.diff_list').find('li').diffViewer();
+      });
+    </script>
+  </body>
+</html>
