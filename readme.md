@@ -1,14 +1,17 @@
 #jquery.diffviewer
 
 ## example
-1. Create before, after html node
+
+####Create before, after html node
+
   ```
   <div class="parent">
     <p class="before"><img src="a.png" alt="a"></p>
     <p class="after"><img src="b.png" alt="a"></p>
   </div>
   ```
-  You can add separator node (optional)
+#####*You can add separator node (optional)*
+
   ```
     <div class="parent">
       <p class="before"><img src="a.png" alt="a"></p>
@@ -16,7 +19,8 @@
       <div class="separator"></div>
   </div>
   ```
-1. Set width & height
+####Set width & height
+
   ```
   .before, .after {
     position: relative;
@@ -24,14 +28,16 @@
     height: 320px;
   }
   ```
-1. Runch  
+####Runch  
+
   ```
   $('.parent').diffViewer();
   ```
 
-***
+
 
 ## options
+
 ```
 $('.parent').diffViewer({before:'.before', after:'.after'});
 ```
