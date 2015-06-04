@@ -8,12 +8,12 @@
     <p class="after"><img src="b.png" alt="a"></p>
   </div>
   ```
-  You can add separator (optional)
+  You can add separator node (optional)
   ```
     <div class="parent">
       <p class="before"><img src="a.png" alt="a"></p>
       <p class="after"><img src="b.png" alt="a"></p>
-      <div class="separator"><p>&nbsp;</p></div>
+      <div class="separator"></div>
   </div>
   ```
   
@@ -36,13 +36,16 @@
 $('.parent').diffViewer({before:'.before', after:'.after'});
 ```
 1. before  
-  set before Node.
+  set before class name.  
+  *default : .before*
 
 1. after  
-  set after Node.
+  set after class name.  
+  *default : .after*
   
 1. sseparator  
-  set separator Node (optional)
+  set separator class name (optional)  
+  *default : .after*
 
 ##version
 - 1.0 - create library
