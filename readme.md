@@ -16,36 +16,41 @@
       <div class="separator"></div>
   </div>
   ```
-  
-  
 1. Set width & height
   ```
-  .parent p {
+  .before, .after {
     position: relative;
     width: 640px;
     height: 320px;
   }
   ```
-1. Runch
+1. Runch  
   ```
   $('.parent').diffViewer();
   ```
+
+***
 
 ## options
 ```
 $('.parent').diffViewer({before:'.before', after:'.after'});
 ```
-1. before  
-  set before class name.  
-  *default : .before*
 
-1. after  
-  set after class name.  
-  *default : .after*
-  
-1. sseparator  
-  set separator class name (optional)  
-  *default : .after*
+1. <dl>
+<dt>before<dt>
+<dd>set before class name.</dd>
+<dd>*default : .before*</dd>
+</dl>
+1. <dl>
+  <dt>after<dt>
+  <dd>set after class name.</dd>
+  <dd>*default : .after*</dd>
+  </dl>
+1. <dl>
+  <dt>separator (optional)<dt>
+  <dd>set separator class name</dd>
+  <dd>*default : .after*</dd>
+  </dl>
 
 ##version
 - 1.0 - create library
